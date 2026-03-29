@@ -1,0 +1,57 @@
+{% include base_path %}
+{% assign sp = site.data.selected_publications %}
+{% if sp and sp.items and sp.items.size > 0 %}
+<div class="selected-pubs-section">
+  <div class="selected-pubs-scroll">
+    {% for item in sp.items %}
+    <article class="sel-pub">
+      <div class="sel-pub__aside">
+        <div class="sel-pub__badge">
+          <span class="sel-pub__badge-main">{{ item.badge }}</span>
+          {% if item.badge_sub %}
+          <span class="sel-pub__badge-sub">{{ item.badge_sub }}</span>
+          {% endif %}
+        </div>
+        {% if item.image %}
+        <div class="sel-pub__thumb-wrap">
+          {% if item.image contains "://" %}
+          <img class="sel-pub__thumb" src="{{ item.image }}" alt="" loading="lazy" width="108" height="108" />
+          {% else %}
+          <img class="sel-pub__thumb" src="{{ item.image | prepend: '/images/' | prepend: base_path }}" alt="" loading="lazy" width="108" height="108" />
+          {% endif %}
+        </div>
+        {% endif %}
+      </div>
+      <div class="sel-pub__body">
+        <h3 class="sel-pub__title">{{ item.title | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
+        {% if item.authors %}
+        <div class="sel-pub__authors">{{ item.authors | markdownify }}</div>
+        {% endif %}
+        {% if item.venue %}
+        <div class="sel-pub__venue">{{ item.venue | markdownify }}</div>
+        {% endif %}
+        {% if item.note_blue %}
+        <div class="sel-pub__note sel-pub__note--blue">{{ item.note_blue | markdownify }}</div>
+        {% endif %}
+        {% if item.note_orange %}
+        <div class="sel-pub__note sel-pub__note--orange">{{ item.note_orange | markdownify }}</div>
+        {% endif %}
+        {% if item.buttons %}
+        <div class="sel-pub__actions">
+          {% for b in item.buttons %}
+            {% if b.url %}
+              {% if b.style == 'award' %}
+              <a class="sel-pub__btn sel-pub__btn--award" href="{{ b.url }}" rel="noopener noreferrer">{{ b.label }}</a>
+              {% else %}
+              <a class="sel-pub__btn" href="{{ b.url }}" rel="noopener noreferrer">{{ b.label }}</a>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

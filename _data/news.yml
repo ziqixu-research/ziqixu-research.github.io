@@ -58,6 +58,10 @@ items:
     body: |
       As first author, [Predicting Multi-dimensional Surgical Outcomes with Multi-modal Mobile Sensing](https://dl.acm.org/doi/abs/10.1145/3659628) has been accepted to Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT). This work was also featured in [WashU News](https://engineering.wustl.edu/news/2025/Predicting-pain-with-machine-learning.htm) and [Health IT Analytics](https://www.techtarget.com/healthtechanalytics/news/366589975/Machine-learning-tool-accurately-predicts-spine-surgery-outcomes).
 
+  - date: "Mar 2025"
+    icon: "🎓"
+    body: |
+      I successfully passed my Ph.D. Qualifying Exam!
 
   - date: "Jan 2024"
     icon: "📄"
