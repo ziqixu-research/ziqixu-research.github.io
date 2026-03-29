@@ -1,0 +1,82 @@
+/* Publications page: single-line citations; gray rule only above each year */
+
+.pub-year-list {
+  margin-top: 0.25rem;
+}
+
+.archive .wordwrap {
+  font-size: $type-size-5;
+  line-height: 1.55;
+  margin-bottom: 0.75rem;
+}
+
+.pub-year-heading {
+  margin: 0 0 0.65rem;
+  padding: 0.75rem 0 0;
+  border-top: 1px solid var(--global-border-color);
+  font-size: $type-size-5;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--global-text-color);
+  scroll-margin-top: calc(#{$masthead-height} + 0.75rem);
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+/* Single publication page: author line under title */
+.page__content .pub-item__line--single {
+  margin: 0 0 1rem;
+  line-height: 1.55;
+  color: var(--global-text-color);
+}
+
+/* Full /publications/ page: larger body than default archive small text */
+.archive .pub-item__line {
+  margin: 0 0 0.85rem;
+  font-size: $type-size-5;
+  line-height: 1.55;
+  color: var(--global-text-color);
+  text-indent: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.pub-item__authors {
+  font-weight: 400;
+}
+
+/* Highlight your name in author lists (publications list, news, single paper pages) */
+.pub-item__self {
+  text-decoration: underline !important;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+  font-weight: 600;
+  color: inherit;
+}
+
+.pub-item__title-link {
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  color: var(--global-link-color);
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: var(--global-link-color-hover);
+  }
+}
+
+.pub-item__tail {
+  font-weight: 400;
+}
+
+.pub-item__highlight {
+  font-weight: 700;
+  color: #a61b1b;
+}

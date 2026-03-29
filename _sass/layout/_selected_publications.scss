@@ -187,8 +187,23 @@
   font-size: $type-size-6;
   font-weight: 600;
 
+  /* “note_blue” in YAML: body text black in light mode (not link/cyan tone) */
   &--blue {
-    color: #1a6cad;
+    color: #000;
+
+    html[data-theme="dark"] & {
+      color: var(--global-text-color);
+    }
+
+    p,
+    strong {
+      color: inherit;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
   }
 
   &--orange {

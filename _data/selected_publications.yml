@@ -1,6 +1,6 @@
 # Curated list for the homepage “Selected publications” block.
 # image: filename under /images/ or full https:// URL
-# authors: Markdown + allowed HTML (e.g. <u>Ziqi Xu</u> for underline)
+# authors: Markdown + allowed HTML (e.g. <u>Ziqi Xu</u> for underline on the homepage cards; full /publications/ page uses Xu Z from collection YAML)
 # venue: Markdown (use *italics* for proceedings title)
 # note_blue / note_orange: optional callout lines (Markdown)
 # buttons: label + url; add style: award for red “AWARDED” style

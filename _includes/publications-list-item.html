@@ -1,0 +1,46 @@
+{% assign p = include.post %}
+{% if p.id %}
+  {% assign title_html = p.title | markdownify | remove: "<p>" | remove: "</p>" | strip %}
+{% else %}
+  {% assign title_html = p.title | strip %}
+{% endif %}
+{% assign pub_year = p.date | default: "1900-01-01" | date: "%Y" %}
+{% assign href = "" %}
+{% if p.paperurl %}
+  {% assign href = p.paperurl %}
+{% elsif p.link %}
+  {% assign href = p.link %}
+{% endif %}
+
+{% assign doi_disp = "" %}
+{% if p.doi and p.doi != "" %}
+  {% assign doi_disp = p.doi | remove: "https://doi.org/" | remove: "http://doi.org/" | split: "?" | first %}
+{% elsif p.paperurl and p.paperurl != "" %}
+  {% assign u = p.paperurl %}
+  {% if u contains "doi.org/" %}
+    {% assign doi_disp = u | split: "doi.org/" | last | split: "?" | first %}
+  {% endif %}
+{% endif %}
+
+<p class="pub-item__line">{%- if p.authors -%}
+  <span class="pub-item__authors">{% include publications-authors-fragment.html authors=p.authors %}</span>.{{ ' ' }}
+{%- endif -%}{% if href != "" -%}
+  <a class="pub-item__title-link" href="{{ href }}" rel="noopener noreferrer">{{ title_html }}</a>.{{ ' ' }}
+{%- else -%}
+  <a class="pub-item__title-link" href="{{ base_path }}{{ p.url }}">{{ title_html }}</a>.{{ ' ' }}
+{%- endif -%}<span class="pub-item__tail">
+    {%- if p.venue != "" and p.venue -%}
+    {{ p.venue }}. {{ pub_year }}
+    {%- elsif p.citation != "" -%}
+    {{ pub_year }}. {{ p.citation }}
+    {%- else -%}
+    {{ pub_year }}
+    {%- endif -%}
+    {%- if doi_disp != "" -%}
+    . doi:{{ doi_disp }}
+    {%- endif -%}
+    {%- if p.highlight -%}
+    <span class="pub-item__highlight"> {{ p.highlight }}</span>
+    {%- endif -%}
+  </span>
+</p>

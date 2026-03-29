@@ -36,6 +36,8 @@ layout: default
         
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif page.collection == 'publications' and page.authors %}
+          <p class="pub-item__line pub-item__line--single"><span class="pub-item__authors">{% include publications-authors-fragment.html authors=page.authors %}</span>.{% if page.venue %} <i>{{ page.venue }}</i>{% endif %}{% if page.date %}, {{ page.date | default: "1900-01-01" | date: "%Y" }}{% endif %}</p>
         {% elsif page.venue and page.date %}
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}

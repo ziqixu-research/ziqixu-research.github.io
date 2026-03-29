@@ -25,6 +25,8 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Ziqi Xu"
+  # Match author lists on publications (e.g. Lastname + initials); used to underline your name in citation lines
+  publication_highlight_name: "Xu Z"
   pronouns         : # example: "she/her"  
   bio              : "Ph.D. candidate in CS @ WashU"
   location         : "St. Louis, MO"

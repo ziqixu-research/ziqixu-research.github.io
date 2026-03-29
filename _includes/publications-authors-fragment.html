@@ -1,0 +1,10 @@
+{%- assign raw = include.authors -%}
+{%- comment -%} Always match "Xu Z" in citation lines; avoid falling back to full name, which breaks when authors use initials. {%- endcomment -%}
+{%- assign sep = site.author.publication_highlight_name | default: "Xu Z" | strip -%}
+{%- if sep == "" -%}
+  {%- assign sep = "Xu Z" -%}
+{%- endif -%}
+{%- assign parts = raw | split: sep -%}
+{%- for part in parts -%}
+{{- part -}}{%- unless forloop.last -%}<span class="pub-item__self">{{ sep }}</span>{%- endunless -%}
+{%- endfor -%}
