@@ -1,6 +1,16 @@
 # News items for the homepage (newest first). Edit body using Markdown.
 
 items:
+  - date: "May 2026"
+    icon: "🍎"
+    body: |
+      I will join Apple as a summer intern in San Diego, working on applied machine learning for display products. I’ll be focusing on leveraging large language models and transformer-based systems to support real-world products.
+
+  - date: "Apr 2026"
+    icon: "📰"
+    body: |
+      My work with Sizhe Wang (first author), *CURA: Clinical Uncertainty Risk Alignment for Language Model–Based Risk Prediction*, has been accepted to the Proceedings of the Annual Meeting of the Association for Computational Linguistics (ACL) 2026 main conference.
+
   - date: "Jan 2026"
     icon: "📰"
     body: |

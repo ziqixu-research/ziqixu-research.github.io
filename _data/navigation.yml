@@ -14,7 +14,7 @@ main:
   - title: "Selected projects"
     url: /#selected-projects
 
-  - title: "Full publications"
+  - title: "Publications"
     url: /publications/
 
   # - title: "Teaching"

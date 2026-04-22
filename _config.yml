@@ -12,7 +12,8 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Ziqi Xu"
 title_separator          : "-"
 name                     : &name "Ziqi Xu"
-description              : &description "Ph.D. student in Computer Science at Washington University in St. Louis. Research in machine learning for healthcare, multimodal AI, and clinical decision support."   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Ziqi Xu is a Ph.D. candidate in Computer Science at Washington University in St. Louis (WashU / WUSTL). Research: machine learning for healthcare, multimodal AI, trustworthy and uncertainty-aware ML, and clinical decision support."   # Used for SEO meta description
+nav_title                : "Homepage"
 url                      : https://ziqixu-research.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -150,9 +151,12 @@ og_description           :  # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : Person
+  name                   : "Ziqi Xu"
   links: # An array of links to social media profiles
+    - "https://scholar.google.com/citations?user=hRiMmwwAAAAJ&hl=zh-CN"
+    - "https://orcid.org/my-orcid?orcid=0000-0003-4286-095X"
+    - "https://www.linkedin.com/in/ziqixu000327/"
 
 
 # Analytics
