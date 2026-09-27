@@ -9,12 +9,17 @@ items:
   - date: "Aug 2026"
     icon: "🍎"
     body: |
-      I wrapped up my summer internship at Apple in San Diego, where I worked on applied agentic workflows for hardware, and gave my final presentation at Apple Park.
+      I wrapped up my summer internship at Apple in San Diego, where I worked on applied agentic workflows for hardware, and was invited to give my final presentation at Apple Park.
 
   - date: "Aug 2026"
     icon: "🎤"
     body: |
       I presented “Using AI to Predict Post-Surgical Headache Improvement for Chiari I and Syringomyelia” at the [Chiari Type I Annual Scientific Update](https://bobbyjonescsf.org/apps/uploads/2026/08/Chiari-Type-I-Annual-Scientific-Update.pdf) alongside [Dr. David Limbrick](https://neurosurgery.vcu.edu/about/our-team/david-d-limbrick-jr-md-phd.html), [Dr. Helia Hosseini](https://www.mir.wustl.edu/employees/helia-hosseini/), and [Dr. Gabriel Haller](https://sites.wustl.edu/hallerlab/).
+
+  - date: "Jul 2026"
+    icon: "📰"
+    body: |
+      My co-first-author work with Salim Yakdan, [Real-Time Symptom and Wearable Monitoring May Improve Prediction of Postoperative Recovery in Lumbar Spine Surgery Beyond Standard Measures](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hRiMmwwAAAAJ&sortby=pubdate&citation_for_view=hRiMmwwAAAAJ:uWQEDVKXjbEC), has been published in *Neurosurgery*.
 
   - date: "May 2026"
     icon: "🎤"
@@ -34,7 +39,7 @@ items:
   - date: "Apr 2026"
     icon: "📰"
     body: |
-      My work with Sizhe Wang (first author), *CURA: Clinical Uncertainty Risk Alignment for Language Model–Based Risk Prediction*, has been accepted to the Proceedings of the Annual Meeting of the Association for Computational Linguistics (ACL) 2026 main conference.
+      My work with Sizhe Wang (first author), [CURA: Clinical Uncertainty Risk Alignment for Language Model–Based Risk Prediction](https://arxiv.org/abs/2604.14651), has been accepted to the Proceedings of the Annual Meeting of the Association for Computational Linguistics (ACL) 2026 main conference. This work was also featured in a [press release](https://engineering.washu.edu/news/2026/Clinical-AI-that-is-more-honest-about-what-it-doesnt-know.html).
 
   - date: "Jan 2026"
     icon: "📰"
