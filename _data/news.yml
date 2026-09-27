@@ -1,10 +1,20 @@
 # News items for the homepage (newest first). Edit body using Markdown.
 
 items:
-  - date: "Aug 2026"
+  - date: "Sep 2026"
     icon: "🤝"
     body: |
       I am happy to serve as a Graduate Student Advisory Board Member for the WashU Center for Career Engagement (2026–2027).
+
+  - date: "Aug 2026"
+    icon: "🍎"
+    body: |
+      I wrapped up my summer internship at Apple in San Diego, where I worked on applied agentic workflows for hardware, and gave my final presentation at Apple Park.
+
+  - date: "Aug 2026"
+    icon: "🎤"
+    body: |
+      I presented “Using AI to Predict Post-Surgical Headache Improvement for Chiari I and Syringomyelia” at the [Chiari Type I Annual Scientific Update](https://bobbyjonescsf.org/apps/uploads/2026/08/Chiari-Type-I-Annual-Scientific-Update.pdf) alongside [Dr. David Limbrick](https://neurosurgery.vcu.edu/about/our-team/david-d-limbrick-jr-md-phd.html), [Dr. Helia Hosseini](https://www.mir.wustl.edu/employees/helia-hosseini/), and [Dr. Gabriel Haller](https://sites.wustl.edu/hallerlab/).
 
   - date: "May 2026"
     icon: "🎤"
