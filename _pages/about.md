@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a fourth-year Ph.D. student in Computer Science at [Washington University in St. Louis](https://washu.edu/), advised by Prof. [Chenyang Lu](https://www.cse.wustl.edu/~lu/) in the [AI for Health Institute](https://aihealth.wustl.edu/). My research focuses on multimodal and trustworthy AI for healthcare, with the goal of supporting clinical decision-making. Prior to my Ph.D., I earned my Bachelor’s degree in Computer Science and Mathematics from WashU, graduating *summa cum laude*. During my undergraduate studies, I conducted research under the guidance of Prof. Lu on machine learning for healthcare.
+I am a fifth-year Ph.D. student in Computer Science at [Washington University in St. Louis](https://washu.edu/), advised by Prof. [Chenyang Lu](https://www.cse.wustl.edu/~lu/) in the [AI for Health Institute](https://aihealth.wustl.edu/). My research focuses on multimodal and trustworthy AI for healthcare, with the goal of supporting clinical decision-making. Prior to my Ph.D., I earned my Bachelor’s degree in Computer Science and Mathematics from WashU, graduating *summa cum laude*. During my undergraduate studies, I conducted research under the guidance of Prof. Lu on machine learning for healthcare.
 
 
 
