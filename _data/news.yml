@@ -1,6 +1,11 @@
 # News items for the homepage (newest first). Edit body using Markdown.
 
 items:
+  - date: "Oct 2026"
+    icon: "🏆"
+    body: |
+      My proposal, “When Should Clinical AI Agents Act? Uncertainty-Aware Delegation for Reliable Decision-Making,” was selected for [Anthropic’s AI for Science program](https://www.anthropic.com/news/ai-for-science-program), receiving $5,000 in credits to support research on trustworthy AI agents for clinical workflow.
+
   - date: "Sep 2026"
     icon: "🤝"
     body: |
