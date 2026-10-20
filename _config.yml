@@ -24,7 +24,7 @@ repository               : "ziqixu-research/ziqixu-research.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Ziqi Xu"
   # Match author lists on publications (e.g. Lastname + initials); used to underline your name in citation lines
   publication_highlight_name: "Xu Z"
