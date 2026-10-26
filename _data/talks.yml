@@ -1,0 +1,35 @@
+# Talks page (/talks/), rendered by _pages/talks.html. Groups and items newest first.
+# Item keys: title, event, url (optional, links the title), location (optional), year.
+
+groups:
+  - heading: "Invited Talks"
+    items:
+      - title: "Beyond Prediction: Trustworthy Multimodal AI for Pain"
+        event: "#Pain2026 AI and Pain Workshop, Gulf Coast Consortia"
+        url: "https://www.eventbrite.com/e/pain2026-workshop-may-15-2026-tickets-1989102455991"
+        year: 2026
+
+      - title: "Using AI to Predict Post-Surgical Headache Improvement for Chiari I and Syringomyelia"
+        event: "Park-Reeves Chiari & Syringomyelia Research Center Annual Update"
+        url: "https://bobbyjonescsf.org/apps/uploads/2026/08/Chiari-Type-I-Annual-Scientific-Update.pdf"
+        year: 2026
+
+      - title: "Expert Opinion or Data-Driven Features? AI-Based Prediction of Headache Outcomes from Surgery for Chiari 1 Malformation with Syringomyelia"
+        event: "Bobby Jones Chiari & Syringomyelia Foundation Think Tank"
+        url: "/files/2026-think-tank-agenda-final.pdf"
+        location: "San Antonio, TX"
+        year: 2026
+
+  - heading: "Conference Presentations"
+    items:
+      - title: "Incorporating Uncertainty in Predictive Models Using Mobile Sensing and Clinical Data: A Case Study on Persistent Post-Surgical Pain"
+        event: "ACM UbiComp / IMWUT"
+        url: "https://doi.org/10.1145/3729488"
+        location: "Helsinki, Finland"
+        year: 2025
+
+      - title: "Predicting Multi-Dimensional Surgical Outcomes with Multi-Modal Mobile Sensing"
+        event: "ACM UbiComp / IMWUT"
+        url: "https://doi.org/10.1145/3659628"
+        location: "Melbourne, Australia"
+        year: 2024

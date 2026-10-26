@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" font-family="Helvetica, Arial, sans-serif">
+  <!-- CURA: language-model risk prediction with uncertainty-risk alignment -->
+  <rect width="1000" height="1000" fill="#fbf8f6"/>
+  <!-- clinical note -->
+  <rect x="70" y="120" width="260" height="330" rx="22" fill="#fff" stroke="#d9d2d6" stroke-width="4"/>
+  <text x="100" y="175" font-size="30" font-weight="700" fill="#3b3442">Clinical note</text>
+  <g fill="#d9d2d6">
+    <rect x="100" y="205" width="200" height="14" rx="7"/>
+    <rect x="100" y="240" width="170" height="14" rx="7"/>
+    <rect x="100" y="275" width="190" height="14" rx="7"/>
+    <rect x="100" y="310" width="140" height="14" rx="7"/>
+    <rect x="100" y="345" width="180" height="14" rx="7"/>
+    <rect x="100" y="380" width="120" height="14" rx="7"/>
+  </g>
+  <!-- arrow -->
+  <path d="M350 285 H430" stroke="#8a8fa3" stroke-width="8" stroke-linecap="round"/>
+  <path d="M418 265 L442 285 L418 305" fill="none" stroke="#8a8fa3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- language model -->
+  <rect x="460" y="170" width="200" height="230" rx="30" fill="#c75c8a"/>
+  <g fill="#fde2e4">
+    <circle cx="510" cy="230" r="14"/><circle cx="560" cy="230" r="14"/><circle cx="610" cy="230" r="14"/>
+    <circle cx="535" cy="285" r="14"/><circle cx="585" cy="285" r="14"/>
+    <circle cx="510" cy="340" r="14"/><circle cx="560" cy="340" r="14"/><circle cx="610" cy="340" r="14"/>
+  </g>
+  <g stroke="#fde2e4" stroke-width="4" opacity="0.7">
+    <line x1="510" y1="230" x2="535" y2="285"/><line x1="560" y1="230" x2="535" y2="285"/><line x1="560" y1="230" x2="585" y2="285"/><line x1="610" y1="230" x2="585" y2="285"/>
+    <line x1="535" y1="285" x2="510" y2="340"/><line x1="535" y1="285" x2="560" y2="340"/><line x1="585" y1="285" x2="560" y2="340"/><line x1="585" y1="285" x2="610" y2="340"/>
+  </g>
+  <text x="560" y="440" text-anchor="middle" font-size="30" font-weight="700" fill="#3b3442">LLM</text>
+  <!-- outputs: risk + uncertainty gauges -->
+  <path d="M680 285 H740" stroke="#8a8fa3" stroke-width="8" stroke-linecap="round"/>
+  <rect x="750" y="190" width="190" height="80" rx="18" fill="#fde2e4"/>
+  <text x="845" y="242" text-anchor="middle" font-size="30" font-weight="700" fill="#6b2a42">Risk</text>
+  <rect x="750" y="300" width="190" height="80" rx="18" fill="#e3efee"/>
+  <text x="845" y="352" text-anchor="middle" font-size="26" font-weight="700" fill="#2f6f6b">Uncertainty</text>
+  <!-- alignment plot -->
+  <rect x="120" y="530" width="760" height="380" rx="24" fill="#fff" stroke="#d9d2d6" stroke-width="4"/>
+  <line x1="200" y1="850" x2="830" y2="850" stroke="#3b3442" stroke-width="5"/>
+  <line x1="200" y1="850" x2="200" y2="590" stroke="#3b3442" stroke-width="5"/>
+  <text x="515" y="895" text-anchor="middle" font-size="26" fill="#3b3442">Predicted uncertainty</text>
+  <text x="160" y="720" text-anchor="middle" font-size="26" fill="#3b3442" transform="rotate(-90 160 720)">Error risk</text>
+  <path d="M220 830 C 400 790, 600 690, 810 600 L 810 650 C 600 740, 400 830, 220 845 Z" fill="#fde2e4"/>
+  <path d="M220 838 C 400 805, 600 715, 810 625" fill="none" stroke="#c75c8a" stroke-width="8" stroke-linecap="round"/>
+  <g fill="#3f8f8b">
+    <circle cx="280" cy="826" r="10"/><circle cx="360" cy="812" r="10"/><circle cx="440" cy="790" r="10"/>
+    <circle cx="520" cy="755" r="10"/><circle cx="600" cy="722" r="10"/><circle cx="680" cy="680" r="10"/><circle cx="760" cy="648" r="10"/>
+  </g>
+  <text x="820" y="580" text-anchor="end" font-size="26" font-weight="700" fill="#c75c8a">aligned</text>
+</svg>

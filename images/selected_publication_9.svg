@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" font-family="Helvetica, Arial, sans-serif">
+  <!-- ACM TCH 2026: adaptive fusion of wearable + clinical data across cohorts -->
+  <rect width="1000" height="1000" fill="#fbf8f6"/>
+  <!-- cohort A -->
+  <rect x="60" y="110" width="260" height="300" rx="24" fill="#fff" stroke="#d9d2d6" stroke-width="4"/>
+  <text x="190" y="160" text-anchor="middle" font-size="28" font-weight="700" fill="#3b3442">Cohort A</text>
+  <g fill="#3f8f8b">
+    <circle cx="120" cy="230" r="22"/><circle cx="190" cy="230" r="22"/><circle cx="260" cy="230" r="22"/>
+    <circle cx="155" cy="310" r="22"/><circle cx="225" cy="310" r="22"/>
+  </g>
+  <!-- cohort B -->
+  <rect x="60" y="560" width="260" height="300" rx="24" fill="#fff" stroke="#d9d2d6" stroke-width="4"/>
+  <text x="190" y="610" text-anchor="middle" font-size="28" font-weight="700" fill="#3b3442">Cohort B</text>
+  <g fill="#d9a441">
+    <circle cx="120" cy="680" r="22"/><circle cx="190" cy="680" r="22"/><circle cx="260" cy="680" r="22"/>
+    <circle cx="155" cy="760" r="22"/><circle cx="225" cy="760" r="22"/>
+  </g>
+  <!-- modality streams -->
+  <g fill="none" stroke-width="7" stroke-linecap="round">
+    <path d="M330 220 C 420 220, 430 400, 520 440" stroke="#3f8f8b"/>
+    <path d="M330 300 C 420 300, 430 480, 520 500" stroke="#8a8fa3"/>
+    <path d="M330 670 C 420 670, 430 560, 520 540" stroke="#d9a441"/>
+    <path d="M330 750 C 420 750, 430 620, 520 590" stroke="#8a8fa3"/>
+  </g>
+  <text x="345" y="190" font-size="22" fill="#3f8f8b" font-weight="700">wearable</text>
+  <text x="345" y="800" font-size="22" fill="#8a8fa3" font-weight="700">clinical</text>
+  <!-- adaptive fusion block -->
+  <rect x="520" y="390" width="200" height="250" rx="30" fill="#c75c8a"/>
+  <text x="620" y="490" text-anchor="middle" font-size="30" font-weight="700" fill="#fff">Adaptive</text>
+  <text x="620" y="530" text-anchor="middle" font-size="30" font-weight="700" fill="#fff">fusion</text>
+  <!-- weight bars -->
+  <rect x="560" y="565" width="50" height="12" rx="6" fill="#fde2e4"/>
+  <rect x="560" y="590" width="110" height="12" rx="6" fill="#fde2e4" opacity="0.7"/>
+  <!-- output -->
+  <path d="M730 515 H800" stroke="#8a8fa3" stroke-width="8" stroke-linecap="round"/>
+  <path d="M788 495 L812 515 L788 535" fill="none" stroke="#8a8fa3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="820" y="420" width="140" height="190" rx="24" fill="#fff" stroke="#d9d2d6" stroke-width="4"/>
+  <text x="890" y="475" text-anchor="middle" font-size="22" font-weight="700" fill="#3b3442">Surgical</text>
+  <text x="890" y="502" text-anchor="middle" font-size="22" font-weight="700" fill="#3b3442">outcome</text>
+  <rect x="845" y="530" width="90" height="16" rx="8" fill="#fde2e4"/>
+  <rect x="845" y="530" width="60" height="16" rx="8" fill="#c75c8a"/>
+  <rect x="845" y="560" width="90" height="16" rx="8" fill="#e3efee"/>
+  <rect x="845" y="560" width="35" height="16" rx="8" fill="#3f8f8b"/>
+  <text x="500" y="940" text-anchor="middle" font-size="26" fill="#8a8fa3">Pancreatic surgery outcome prediction</text>
+</svg>

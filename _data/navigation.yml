@@ -11,17 +11,26 @@ main:
   - title: "News"
     url: /#news
 
-  - title: "Selected projects"
-    url: /#selected-projects
+  - title: "Research"
+    url: /research/
 
   - title: "Publications"
     url: /publications/
+
+  - title: "Talks"
+    url: /talks/
 
   # - title: "Teaching"
   #   url: /teaching/
 
   - title: "CV"
     url: /cv/
+
+  - title: "Honors & Awards"
+    url: /#honors
+
+  - title: "Service & Mentoring"
+    url: /#service
 
   # - title: "CV"
   #   url: /cv-json/

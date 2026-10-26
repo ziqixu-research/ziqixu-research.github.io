@@ -2,15 +2,25 @@
 layout: archive
 title: "Talks and presentations"
 permalink: /talks/
-author_profile: true
+author_profile: false
 ---
 
-{% if site.talkmap_link == true %}
+{% include base_path %}
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
-{% endif %}
-
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+<div class="pub-year-list">
+  {% for group in site.data.talks.groups %}
+    <h2 class="pub-year-heading">{{ group.heading }}</h2>
+    {% for t in group.items %}
+      {% assign href = t.url %}
+      {% if href and href contains "://" %}{% else %}{% assign href = base_path | append: t.url %}{% endif %}
+      <p class="pub-item__line">
+        {%- if t.url -%}
+          <a class="pub-item__title-link" href="{{ href }}" rel="noopener noreferrer">“{{ t.title }}”</a>
+        {%- else -%}
+          “{{ t.title }}”
+        {%- endif -%}
+        <span class="pub-item__tail">. <em>{{ t.event }}</em>{% if t.location %}, {{ t.location }}{% endif %}, {{ t.year }}.</span>
+      </p>
+    {% endfor %}
+  {% endfor %}
+</div>

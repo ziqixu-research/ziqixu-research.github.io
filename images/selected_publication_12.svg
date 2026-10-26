@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" font-family="Helvetica, Arial, sans-serif">
+  <!-- AIDS 2025: ML prediction of poor ART adherence among adolescents living with HIV -->
+  <rect width="1000" height="1000" fill="#fbf8f6"/>
+  <!-- pill / adherence calendar -->
+  <rect x="70" y="100" width="500" height="470" rx="24" fill="#fff" stroke="#d9d2d6" stroke-width="4"/>
+  <text x="100" y="155" font-size="30" font-weight="700" fill="#3b3442">Daily ART adherence</text>
+  <g font-size="20" fill="#8a8fa3" text-anchor="middle">
+    <text x="135" y="200">M</text><text x="200" y="200">T</text><text x="265" y="200">W</text><text x="330" y="200">T</text><text x="395" y="200">F</text><text x="460" y="200">S</text><text x="525" y="200">S</text>
+  </g>
+  <g>
+    <!-- row 1 -->
+    <rect x="110" y="220" width="50" height="50" rx="10" fill="#3f8f8b"/><rect x="175" y="220" width="50" height="50" rx="10" fill="#3f8f8b"/><rect x="240" y="220" width="50" height="50" rx="10" fill="#3f8f8b"/><rect x="305" y="220" width="50" height="50" rx="10" fill="#3f8f8b"/><rect x="370" y="220" width="50" height="50" rx="10" fill="#3f8f8b"/><rect x="435" y="220" width="50" height="50" rx="10" fill="#f1ecef"/><rect x="500" y="220" width="50" height="50" rx="10" fill="#3f8f8b"/>
+    <!-- row 2 -->
+    <rect x="110" y="285" width="50" height="50" rx="10" fill="#3f8f8b"/><rect x="175" y="285" width="50" height="50" rx="10" fill="#3f8f8b"/><rect x="240" y="285" width="50" height="50" rx="10" fill="#f1ecef"/><rect x="305" y="285" width="50" height="50" rx="10" fill="#3f8f8b"/><rect x="370" y="285" width="50" height="50" rx="10" fill="#f1ecef"/><rect x="435" y="285" width="50" height="50" rx="10" fill="#f1ecef"/><rect x="500" y="285" width="50" height="50" rx="10" fill="#3f8f8b"/>
+    <!-- row 3 -->
+    <rect x="110" y="350" width="50" height="50" rx="10" fill="#f1ecef"/><rect x="175" y="350" width="50" height="50" rx="10" fill="#3f8f8b"/><rect x="240" y="350" width="50" height="50" rx="10" fill="#f1ecef"/><rect x="305" y="350" width="50" height="50" rx="10" fill="#f1ecef"/><rect x="370" y="350" width="50" height="50" rx="10" fill="#3f8f8b"/><rect x="435" y="350" width="50" height="50" rx="10" fill="#f1ecef"/><rect x="500" y="350" width="50" height="50" rx="10" fill="#f1ecef"/>
+    <!-- row 4 -->
+    <rect x="110" y="415" width="50" height="50" rx="10" fill="#f1ecef"/><rect x="175" y="415" width="50" height="50" rx="10" fill="#f1ecef"/><rect x="240" y="415" width="50" height="50" rx="10" fill="#f1ecef"/><rect x="305" y="415" width="50" height="50" rx="10" fill="#3f8f8b"/><rect x="370" y="415" width="50" height="50" rx="10" fill="#f1ecef"/><rect x="435" y="415" width="50" height="50" rx="10" fill="#f1ecef"/><rect x="500" y="415" width="50" height="50" rx="10" fill="#f1ecef"/>
+  </g>
+  <g font-size="20" fill="#3b3442">
+    <rect x="110" y="500" width="24" height="24" rx="5" fill="#3f8f8b"/><text x="145" y="519">dose taken</text>
+    <rect x="300" y="500" width="24" height="24" rx="5" fill="#f1ecef" stroke="#d9d2d6" stroke-width="2"/><text x="335" y="519">missed</text>
+  </g>
+  <!-- pill capsule -->
+  <g transform="rotate(-35 790 250)">
+    <rect x="690" y="205" width="200" height="90" rx="45" fill="#fde2e4"/>
+    <path d="M735 205 h55 v90 h-55 a45 45 0 0 1 0 -90 z" fill="#c75c8a"/>
+  </g>
+  <!-- socioeconomic features -> ML -> risk -->
+  <rect x="70" y="640" width="860" height="280" rx="24" fill="#fff" stroke="#d9d2d6" stroke-width="4"/>
+  <g font-size="22" fill="#3b3442">
+    <rect x="110" y="680" width="200" height="50" rx="25" fill="#e3efee"/><text x="210" y="713" text-anchor="middle">Household</text>
+    <rect x="110" y="745" width="200" height="50" rx="25" fill="#e3efee"/><text x="210" y="778" text-anchor="middle">Psychosocial</text>
+    <rect x="110" y="810" width="200" height="50" rx="25" fill="#e3efee"/><text x="210" y="843" text-anchor="middle">Clinical</text>
+  </g>
+  <path d="M330 770 H420" stroke="#8a8fa3" stroke-width="8" stroke-linecap="round"/>
+  <path d="M408 750 L432 770 L408 790" fill="none" stroke="#8a8fa3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="450" y="700" width="170" height="140" rx="24" fill="#c75c8a"/>
+  <text x="535" y="783" text-anchor="middle" font-size="36" font-weight="700" fill="#fff">ML</text>
+  <path d="M640 770 H700" stroke="#8a8fa3" stroke-width="8" stroke-linecap="round"/>
+  <path d="M688 750 L712 770 L688 790" fill="none" stroke="#8a8fa3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="815" y="735" text-anchor="middle" font-size="22" font-weight="700" fill="#3b3442">Poor adherence</text>
+  <text x="815" y="762" text-anchor="middle" font-size="22" font-weight="700" fill="#3b3442">risk</text>
+  <rect x="735" y="785" width="160" height="22" rx="11" fill="#fde2e4"/>
+  <rect x="735" y="785" width="115" height="22" rx="11" fill="#c75c8a"/>
+</svg>

@@ -1,9 +1,32 @@
 {% include base_path %}
+{%- comment -%}
+  Usage: {% include selected_publications.html featured_only=true %} on the homepage shows only items
+  with `featured: true`; without the parameter (the /research/ page) every item is shown.
+{%- endcomment -%}
 {% assign sp = site.data.selected_publications %}
-{% if sp and sp.items and sp.items.size > 0 %}
+{% if sp and sp.themes and sp.themes.size > 0 %}
 <div class="selected-pubs-section">
+  <ul class="sel-pub-themes-nav" aria-label="Research themes">
+    {% for theme in sp.themes %}
+    <li><a href="#{{ theme.id }}">{{ theme.title }}</a></li>
+    {% endfor %}
+  </ul>
+  {% if include.featured_only %}
+  <p class="sel-pub-more"><a href="{{ base_path }}/research/">View more projects →</a></p>
+  {% endif %}
   <div class="selected-pubs-scroll">
-    {% for item in sp.items %}
+    {% for theme in sp.themes %}
+    {% if include.featured_only %}
+      {% assign theme_items = theme.items | where: "featured", true %}
+    {% else %}
+      {% assign theme_items = theme.items %}
+    {% endif %}
+    <section class="sel-pub-theme" id="{{ theme.id }}">
+      <h3 class="sel-pub-theme__title">{{ theme.title }}</h3>
+      {% if theme.intro %}
+      <div class="sel-pub-theme__intro">{{ theme.intro | markdownify }}</div>
+      {% endif %}
+    {% for item in theme_items %}
     <article class="sel-pub">
       <div class="sel-pub__aside">
         <div class="sel-pub__badge">
@@ -55,6 +78,8 @@
         {% endif %}
       </div>
     </article>
+    {% endfor %}
+    </section>
     {% endfor %}
   </div>
   <div class="sel-pub-lightbox" id="sel-pub-lightbox-root" hidden aria-modal="true" role="dialog" aria-label="Publication figure">

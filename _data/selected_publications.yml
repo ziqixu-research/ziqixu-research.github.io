@@ -1,79 +1,175 @@
-# Curated list for the homepage “Selected publications” block.
+# Curated list for the homepage “Selected projects” block, grouped by research theme.
+# themes: list of { id, title, intro, items }. id is the anchor (#id) linked from Research Interests in _pages/about.md.
+#         intro: one or two sentences (Markdown) shown under the theme title.
+# Each item:
 # image: filename only (e.g. imwut-2025.png). Put the actual file in /images/ at the site root — not in _data/.
-#        Or use a full https:// URL to hotlink an image elsewhere.
-#        Best: square PNG/JPEG, 800×800 to 1200×1200 px (matches on-page square thumb + lightbox; avoids uneven crops).
+#        Or use a full https:// URL to hotlink an image elsewhere. SVG works too.
+#        Best: square PNG/JPEG/SVG, 800×800 to 1200×1200 px (matches on-page square thumb + lightbox; avoids uneven crops).
 #        image_contain: true — scale image to fit inside the square without cropping (letterboxing); use for wide/short figures.
 # authors: Markdown + allowed HTML (e.g. <u>Ziqi Xu</u> for underline on the homepage cards; full /publications/ page uses Xu Z from collection YAML)
 # venue: Markdown (use *italics* for proceedings title)
 # note_blue / note_orange: optional callout lines (Markdown)
 # buttons: label + url; add style: award for red “AWARDED” style
+# featured: true — also show this card in the short homepage list (the /research/ page shows every item)
 
-items:
-  - badge: "IMWUT 2025"
-    image: selected_publication_1.png
-    title: "Incorporating Uncertainty in Predictive Models Using Mobile Sensing and Clinical Data: A Case Study on Persistent Post-surgical Pain"
-    authors: "<u>Ziqi Xu</u>, Jingwen Zhang, Simon Haroutounian, Hanyang Liu, Zihan Cao, Gabrielle Rose Messner, Harutyun B. Alaverdyan, Saivee Ahuja, Rahul Koshy, Joel Hanns, Madelyn Frumkin, Thomas L. Rodebaugh, Chenyang Lu"
-    venue: "*Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)*, Vol. 9, No. 2, Article 58, June 2025 (33 pages)"
-    note_blue: "**Presented at** ACM UbiComp / ISWC 2025 (Helsinki, Finland)."
-    buttons:
-      - { label: "ABS", url: "https://dl.acm.org/doi/10.1145/3729488" }
-      - { label: "DOI", url: "https://doi.org/10.1145/3729488" }
-      - { label: "PDF", url: "https://dl.acm.org/doi/pdf/10.1145/3729488" }
-      - { label: "BIB", url: "https://api.crossref.org/works/10.1145/3729488/transform/application/x-bibtex" }
+themes:
+  - id: uncertainty
+    title: "Uncertainty Quantification & Trustworthy AI"
+    intro: "Methods that let clinical models recognize when they may be wrong — from modality-specific uncertainty in multimodal fusion to uncertainty–risk alignment in language models — so predictions can be trusted, or deferred to clinicians, appropriately."
+    items:
+      - badge: "IMWUT 2025"
+        featured: true
+        image: selected_publication_1.png
+        title: "Incorporating Uncertainty in Predictive Models Using Mobile Sensing and Clinical Data: A Case Study on Persistent Post-surgical Pain"
+        authors: "<u>Ziqi Xu</u>, Jingwen Zhang, Simon Haroutounian, Hanyang Liu, Zihan Cao, Gabrielle Rose Messner, Harutyun B. Alaverdyan, Saivee Ahuja, Rahul Koshy, Joel Hanns, Madelyn Frumkin, Thomas L. Rodebaugh, Chenyang Lu"
+        venue: "*Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)*, Vol. 9, No. 2, Article 58, June 2025 (33 pages)"
+        note_blue: "**Presented at** ACM UbiComp / ISWC 2025 (Helsinki, Finland)."
+        buttons:
+          - { label: "ABS", url: "https://dl.acm.org/doi/10.1145/3729488" }
+          - { label: "DOI", url: "https://doi.org/10.1145/3729488" }
+          - { label: "PDF", url: "https://dl.acm.org/doi/pdf/10.1145/3729488" }
+          - { label: "BIB", url: "https://api.crossref.org/works/10.1145/3729488/transform/application/x-bibtex" }
 
-  - badge: "IMWUT 2024"
-    image: selected_publication_2.png
-    title: "Predicting Multi-dimensional Surgical Outcomes with Multi-modal Mobile Sensing: A Case Study with Patients Undergoing Lumbar Spine Surgery"
-    authors: "<u>Ziqi Xu</u>, Jingwen Zhang, Jacob Greenberg, Madelyn Frumkin, Saad Javeed, Justin K. Zhang, Braeden Benedict, Kathleen Botterbush, Thomas L. Rodebaugh, Wilson Z. Ray, Chenyang Lu"
-    venue: "*Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)*, Vol. 8, No. 2, Article 81, June 2024 (30 pages)"
-    note_blue: "**Presented at** ACM UbiComp / ISWC 2024 (Melbourne, Australia)."
-    buttons:
-      - { label: "ABS", url: "https://dl.acm.org/doi/10.1145/3659628" }
-      - { label: "DOI", url: "https://doi.org/10.1145/3659628" }
-      - { label: "PDF", url: "https://dl.acm.org/doi/pdf/10.1145/3659628" }
-      - { label: "BIB", url: "https://api.crossref.org/works/10.1145/3659628/transform/application/x-bibtex" }
+      - badge: "ACL 2026"
+        featured: true
+        image: selected_publication_7.svg
+        title: "CURA: Clinical Uncertainty Risk Alignment for Language Model–Based Risk Prediction"
+        authors: "Sizhe Wang, <u>Ziqi Xu</u>, Claire Najjuuko, Yuyang Wu, C. Alba, Chenyang Lu"
+        venue: "*Proceedings of the Annual Meeting of the Association for Computational Linguistics (ACL 2026)*, Main Conference."
+        buttons:
+          - { label: "ABS", url: "https://aclanthology.org/2026.acl-long.1567/" }
+          - { label: "DOI", url: "https://doi.org/10.18653/v1/2026.acl-long.1567" }
+          - { label: "PDF", url: "https://aclanthology.org/2026.acl-long.1567.pdf" }
+          - { label: "BIB", url: "https://aclanthology.org/2026.acl-long.1567.bib" }
 
-  - badge: "Neurosurgery"
-    image: selected_publication_3.png
-    title: "Using Artificial Intelligence to Identify Three Presenting Phenotypes of Chiari Type-1 Malformation and Syringomyelia"
-    authors: "Vivek Prakash Gupta\\*, <u>Ziqi Xu</u>\\* (equal contribution), Jacob K. Greenberg, Jennifer Mae Strahle, Gabriel Haller, Thanda Meehan, Ashley Roberts, David D. Limbrick Jr., Chenyang Lu"
-    venue: "*Neurosurgery* 96(6):1341–1352, June 2025."
-    buttons:
-      - { label: "ABS", url: "https://journals.lww.com/neurosurgery/abstract/2025/06000/using_artificial_intelligence_to_identify_three.20.aspx" }
-      - { label: "DOI", url: "https://doi.org/10.1227/neu.0000000000003249" }
-      - { label: "BIB", url: "https://api.crossref.org/works/10.1227/neu.0000000000003249/transform/application/x-bibtex" }
+  - id: mobile-sensing
+    title: "Multimodal Mobile Sensing & Wearables"
+    intro: "Predictive models that fuse wearable signals, ecological momentary assessments, and clinical data to forecast multi-dimensional recovery and pain outcomes for surgical patients."
+    items:
+      - badge: "IMWUT 2024"
+        featured: true
+        image: selected_publication_2.png
+        title: "Predicting Multi-dimensional Surgical Outcomes with Multi-modal Mobile Sensing: A Case Study with Patients Undergoing Lumbar Spine Surgery"
+        authors: "<u>Ziqi Xu</u>, Jingwen Zhang, Jacob Greenberg, Madelyn Frumkin, Saad Javeed, Justin K. Zhang, Braeden Benedict, Kathleen Botterbush, Thomas L. Rodebaugh, Wilson Z. Ray, Chenyang Lu"
+        venue: "*Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)*, Vol. 8, No. 2, Article 81, June 2024 (30 pages)"
+        note_blue: "**Presented at** ACM UbiComp / ISWC 2024 (Melbourne, Australia)."
+        buttons:
+          - { label: "ABS", url: "https://dl.acm.org/doi/10.1145/3659628" }
+          - { label: "DOI", url: "https://doi.org/10.1145/3659628" }
+          - { label: "PDF", url: "https://dl.acm.org/doi/pdf/10.1145/3659628" }
+          - { label: "BIB", url: "https://api.crossref.org/works/10.1145/3659628/transform/application/x-bibtex" }
 
-  - badge: "Neurosurgery"
-    image: selected_publication_4.png
-    title: "Preoperative Mobile Health Data Improve Predictions of Recovery From Lumbar Spine Surgery"
-    authors: "Jacob K. Greenberg\\*, Madelyn Frumkin\\*, <u>Ziqi Xu</u>\\* (equal contribution), Jingwen Zhang, Saad Javeed, Justin K. Zhang, Braeden Benedict, Kathleen Botterbush, Salim Yakdan, Camilo A. Molina, Brenton H. Pennicooke, Daniel Hafez, John I. Ogunlade, Nicholas Pallotta, Munish C. Gupta, Jacob M. Buchowski, Brian Neuman, Michael Steinmetz, Zoher Ghogawala, Michael P. Kelly, Burel R. Goodin, Jay F. Piccirillo, Thomas L. Rodebaugh, Chenyang Lu, Wilson Z. Ray"
-    venue: "*Neurosurgery* 95(3):617–626, September 2024."
-    buttons:
-      - { label: "ABS", url: "https://journals.lww.com/neurosurgery/abstract/2024/09000/preoperative_mobile_health_data_improve.17.aspx" }
-      - { label: "DOI", url: "https://doi.org/10.1227/neu.0000000000002911" }
-      - { label: "BIB", url: "https://api.crossref.org/works/10.1227/neu.0000000000002911/transform/application/x-bibtex" }
+      - badge: "Neurosurgery"
+        badge_sub: "2026"
+        featured: true
+        image: selected_publication_8.svg
+        title: "Real-Time Symptom and Wearable Monitoring May Improve Prediction of Postoperative Recovery in Lumbar Spine Surgery Beyond Standard Measures"
+        authors: "Salim Yakdan\\*, <u>Ziqi Xu</u>\\* (equal contribution), Jingwen Zhang, Faraz Arkam, Thomas L. Rodebaugh, Burel R. Goodin, Brian J. Neuman, Michael P. Steinmetz, Michael P. Kelly, Shay Bess, Jang Yoon, Wilson Z. Ray, Chenyang Lu, Madelyn R. Frumkin, Jacob K. Greenberg"
+        venue: "*Neurosurgery*, 2026."
+        buttons:
+          - { label: "DOI", url: "https://doi.org/10.1227/neu.0000000000004195" }
+          - { label: "BIB", url: "https://api.crossref.org/works/10.1227/neu.0000000000004195/transform/application/x-bibtex" }
 
-  - badge: "Nature Communications"
-    image: selected_publication_5.png
-    image_contain: true
-    title: "Patterns of maternal and child health services utilization and associated socioeconomic disparities in sub-Saharan Africa"
-    authors: "Claire Najjuuko, <u>Ziqi Xu</u>, Samuel Kizito, Chenyang Lu, Fred M. Ssewamala"
-    venue: "*Nature Communications* vol. 16, Article 7840 (2025). Published 22 August 2025."
-    buttons:
-      - { label: "ABS", url: "https://www.nature.com/articles/s41467-025-61350-8" }
-      - { label: "DOI", url: "https://doi.org/10.1038/s41467-025-61350-8" }
-      - { label: "PDF", url: "https://www.nature.com/articles/s41467-025-61350-8.pdf" }
-      - { label: "BIB", url: "https://api.crossref.org/works/10.1038/s41467-025-61350-8/transform/application/x-bibtex" }
+      - badge: "Neurosurgery"
+        image: selected_publication_4.png
+        title: "Preoperative Mobile Health Data Improve Predictions of Recovery From Lumbar Spine Surgery"
+        authors: "Jacob K. Greenberg\\*, Madelyn Frumkin\\*, <u>Ziqi Xu</u>\\* (equal contribution), Jingwen Zhang, Saad Javeed, Justin K. Zhang, Braeden Benedict, Kathleen Botterbush, Salim Yakdan, Camilo A. Molina, Brenton H. Pennicooke, Daniel Hafez, John I. Ogunlade, Nicholas Pallotta, Munish C. Gupta, Jacob M. Buchowski, Brian Neuman, Michael Steinmetz, Zoher Ghogawala, Michael P. Kelly, Burel R. Goodin, Jay F. Piccirillo, Thomas L. Rodebaugh, Chenyang Lu, Wilson Z. Ray"
+        venue: "*Neurosurgery* 95(3):617–626, September 2024."
+        buttons:
+          - { label: "ABS", url: "https://journals.lww.com/neurosurgery/abstract/2024/09000/preoperative_mobile_health_data_improve.17.aspx" }
+          - { label: "DOI", url: "https://doi.org/10.1227/neu.0000000000002911" }
+          - { label: "BIB", url: "https://api.crossref.org/works/10.1227/neu.0000000000002911/transform/application/x-bibtex" }
 
-  - badge: "ACL 2025"
-    image: selected_publication_6.png
-    image_contain: true
-    title: "Utilizing Semantic Textual Similarity for Clinical Survey Data Feature Selection"
-    authors: "Benjamin C. Warner, <u>Ziqi Xu</u>, Simon Haroutounian, Thomas Kannampallil, Chenyang Lu"
-    venue: "*Findings of the Association for Computational Linguistics: ACL 2025*, pages 502–520, Vienna, Austria, July 2025."
-    note_blue: "**Presented at** ACL 2025 (Vienna, Austria)."
-    buttons:
-      - { label: "ABS", url: "https://aclanthology.org/2025.findings-acl.27/" }
-      - { label: "DOI", url: "https://doi.org/10.18653/v1/2025.findings-acl.27" }
-      - { label: "PDF", url: "https://aclanthology.org/2025.findings-acl.27.pdf" }
-      - { label: "BIB", url: "https://aclanthology.org/2025.findings-acl.27.bib" }
+      - badge: "ACM TCH 2026"
+        image: selected_publication_9.svg
+        title: "Addressing Cohort Variability with Adaptive Fusion of Wearable and Clinical Data: A Case Study in Predicting Pancreatic Surgery Outcomes"
+        authors: "Jingwen Zhang, R. Wang, <u>Ziqi Xu</u>, Hanyang Liu, J. Rodriguez, H. Cos, R. Srivastava, L. Raper, Dominic Sanford, C. Hammill, Chenyang Lu"
+        venue: "*ACM Transactions on Computing for Healthcare*, Vol. 7, No. 2, pp. 1–27, 2026."
+        buttons:
+          - { label: "ABS", url: "https://dl.acm.org/doi/10.1145/3788681" }
+          - { label: "DOI", url: "https://doi.org/10.1145/3788681" }
+          - { label: "BIB", url: "https://api.crossref.org/works/10.1145/3788681/transform/application/x-bibtex" }
+
+      - badge: "J. Pain 2025"
+        image: selected_publication_10.svg
+        title: "Rethinking Measurement of Movement-Evoked Pain with Digital Technology"
+        authors: "Madelyn R. Frumkin, Jingwen Zhang, <u>Ziqi Xu</u>, Salim Yakdan, Braeden Benedict, Saad Javeed, Justin K. Zhang, Kathleen Botterbush, Burel R. Goodin, Chenyang Lu, Wilson Z. Ray, Jacob K. Greenberg"
+        venue: "*The Journal of Pain*, 105643, 2025."
+        buttons:
+          - { label: "DOI", url: "https://doi.org/10.1016/j.jpain.2025.105643" }
+          - { label: "BIB", url: "https://api.crossref.org/works/10.1016/j.jpain.2025.105643/transform/application/x-bibtex" }
+
+      - badge: "BMJ Open 2026"
+        image: selected_publication_11.svg
+        title: "Protocol for Personalised Prediction of Persistent Postsurgical Pain"
+        authors: "K. J. Holzer, Harutyun B. Alaverdyan, <u>Ziqi Xu</u>, Madelyn R. Frumkin, K. A. Frey, S. H. Gregory, Thomas L. Rodebaugh, Chenyang Lu, C. R. King, D. Head, Thomas Kannampallil, Simon Haroutounian"
+        venue: "*BMJ Open*, Vol. 16, No. 2, e107055, 2026."
+        buttons:
+          - { label: "DOI", url: "https://doi.org/10.1136/bmjopen-2025-107055" }
+          - { label: "BIB", url: "https://api.crossref.org/works/10.1136/bmjopen-2025-107055/transform/application/x-bibtex" }
+
+  - id: ehr-phenotyping
+    title: "EHR & Clinical Data: Prediction and Patient Phenotyping"
+    intro: "Machine learning on structured EHR, survey, and population health data to discover patient subgroups through clustering and phenotyping, predict clinical risk, and support treatment decisions."
+    items:
+      - badge: "Neurosurgery"
+        featured: true
+        image: selected_publication_3.png
+        title: "Using Artificial Intelligence to Identify Three Presenting Phenotypes of Chiari Type-1 Malformation and Syringomyelia"
+        authors: "Vivek Prakash Gupta\\*, <u>Ziqi Xu</u>\\* (equal contribution), Jacob K. Greenberg, Jennifer Mae Strahle, Gabriel Haller, Thanda Meehan, Ashley Roberts, David D. Limbrick Jr., Chenyang Lu"
+        venue: "*Neurosurgery* 96(6):1341–1352, June 2025."
+        buttons:
+          - { label: "ABS", url: "https://journals.lww.com/neurosurgery/abstract/2025/06000/using_artificial_intelligence_to_identify_three.20.aspx" }
+          - { label: "DOI", url: "https://doi.org/10.1227/neu.0000000000003249" }
+          - { label: "BIB", url: "https://api.crossref.org/works/10.1227/neu.0000000000003249/transform/application/x-bibtex" }
+
+      - badge: "Nature Communications"
+        featured: true
+        image: selected_publication_5.png
+        image_contain: true
+        title: "Patterns of maternal and child health services utilization and associated socioeconomic disparities in sub-Saharan Africa"
+        authors: "Claire Najjuuko, <u>Ziqi Xu</u>, Samuel Kizito, Chenyang Lu, Fred M. Ssewamala"
+        venue: "*Nature Communications* vol. 16, Article 7840 (2025). Published 22 August 2025."
+        buttons:
+          - { label: "ABS", url: "https://www.nature.com/articles/s41467-025-61350-8" }
+          - { label: "DOI", url: "https://doi.org/10.1038/s41467-025-61350-8" }
+          - { label: "PDF", url: "https://www.nature.com/articles/s41467-025-61350-8.pdf" }
+          - { label: "BIB", url: "https://api.crossref.org/works/10.1038/s41467-025-61350-8/transform/application/x-bibtex" }
+
+      - badge: "AIDS 2025"
+        image: selected_publication_12.svg
+        title: "Using Machine Learning to Predict Poor Adherence to Antiretroviral Therapy Among Adolescents Living with HIV in Low-Resource Settings"
+        authors: "Claire Najjuuko, R. Brathwaite, <u>Ziqi Xu</u>, Samuel Kizito, Chenyang Lu, Fred M. Ssewamala"
+        venue: "*AIDS* 39(9):1204–1213, 2025."
+        buttons:
+          - { label: "DOI", url: "https://doi.org/10.1097/QAD.0000000000004163" }
+          - { label: "BIB", url: "https://api.crossref.org/works/10.1097/QAD.0000000000004163/transform/application/x-bibtex" }
+
+      - badge: "ACL 2025"
+        image: selected_publication_6.png
+        image_contain: true
+        title: "Utilizing Semantic Textual Similarity for Clinical Survey Data Feature Selection"
+        authors: "Benjamin C. Warner, <u>Ziqi Xu</u>, Simon Haroutounian, Thomas Kannampallil, Chenyang Lu"
+        venue: "*Findings of the Association for Computational Linguistics: ACL 2025*, pages 502–520, Vienna, Austria, July 2025."
+        note_blue: "**Presented at** ACL 2025 (Vienna, Austria)."
+        buttons:
+          - { label: "ABS", url: "https://aclanthology.org/2025.findings-acl.27/" }
+          - { label: "DOI", url: "https://doi.org/10.18653/v1/2025.findings-acl.27" }
+          - { label: "PDF", url: "https://aclanthology.org/2025.findings-acl.27.pdf" }
+          - { label: "BIB", url: "https://aclanthology.org/2025.findings-acl.27.bib" }
+
+      - badge: "KDD 2023"
+        image: selected_publication_13.svg
+        title: "Assisting Clinical Decisions for Scarcely Available Treatment via Disentangled Latent Representation"
+        authors: "Bing Xue, A. S. Said, <u>Ziqi Xu</u>, Hanyang Liu, N. Shah, H. Yang, P. Payne, Chenyang Lu"
+        venue: "*Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2023)*."
+        buttons:
+          - { label: "ABS", url: "https://dl.acm.org/doi/10.1145/3580305.3599774" }
+          - { label: "DOI", url: "https://doi.org/10.1145/3580305.3599774" }
+          - { label: "BIB", url: "https://api.crossref.org/works/10.1145/3580305.3599774/transform/application/x-bibtex" }
+
+      - badge: "Artif. Organs 2023"
+        image: selected_publication_14.svg
+        title: "Validation of Extracorporeal Membrane Oxygenation Mortality Prediction and Severity of Illness Scores in an International COVID-19 Cohort"
+        authors: "N. Shah, Bing Xue, <u>Ziqi Xu</u>, H. Yang, E. Marwali, H. Dalton, P. Payne, Chenyang Lu, A. S. Said, ISARIC Clinical Characterisation Group"
+        venue: "*Artificial Organs* 47(9):1490–1502, 2023."

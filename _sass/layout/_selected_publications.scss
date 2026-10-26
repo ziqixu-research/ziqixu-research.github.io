@@ -25,30 +25,20 @@
   outline: none !important;
   background: transparent !important;
 
-  max-height: min(72rem, 156vh);
-  min-height: 30rem;
-  overflow-y: auto;
-  overflow-x: hidden;
-  overscroll-behavior: contain;
+  /* No inner scroll: the list flows with the page so every theme is visible */
   padding: 0.35rem 0 0;
   margin-top: 0.4rem;
-  -webkit-overflow-scrolling: touch;
+}
 
-  scrollbar-width: thin;
-  scrollbar-color: var(--global-dark-border-color) transparent;
+/* Theme jump buttons under the section heading */
+/* Theme jump links: a plain bulleted list, one theme per line */
+.page__content ul.sel-pub-themes-nav {
+  margin: 0.25rem 0 0.75rem;
 
-  &::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: var(--global-dark-border-color);
-    border-radius: 3px;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: transparent;
-    border: 0;
+  li {
+    display: list-item;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
   }
 }
 
@@ -410,4 +400,41 @@
     width: 7.5rem;
     flex: 0 0 auto;
   }
+}
+
+/* Research-theme groups inside the selected projects panel */
+.page__content .sel-pub-theme {
+  scroll-margin-top: 4.5rem;
+
+  & + .sel-pub-theme {
+    margin-top: 1.5rem;
+  }
+}
+
+.page__content h3.sel-pub-theme__title {
+  margin: 0.5rem 0 0.35rem;
+  padding-left: 0.65rem;
+  border-left: 4px solid $accent-pink;
+  font-size: $type-size-5;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+
+.sel-pub-theme__intro {
+  margin-bottom: 0.25rem;
+  font-size: $type-size-6;
+  line-height: 1.55;
+  color: var(--global-text-color-light);
+
+  p {
+    margin: 0;
+    font-size: inherit;
+  }
+}
+
+.page__content p.sel-pub-more {
+  margin: 0 0 0.75rem;
+  font-size: $type-size-6;
+  font-weight: 600;
 }

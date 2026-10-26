@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" font-family="Helvetica, Arial, sans-serif">
+  <!-- Artificial Organs 2023: validating ECMO mortality prediction & severity-of-illness scores in an international COVID-19 cohort -->
+  <rect width="1000" height="1000" fill="#fbf8f6"/>
+  <!-- globe: international cohort -->
+  <circle cx="220" cy="250" r="140" fill="#e3efee" stroke="#3f8f8b" stroke-width="6"/>
+  <ellipse cx="220" cy="250" rx="60" ry="140" fill="none" stroke="#3f8f8b" stroke-width="4"/>
+  <line x1="80" y1="250" x2="360" y2="250" stroke="#3f8f8b" stroke-width="4"/>
+  <path d="M95 185 H345 M95 315 H345" stroke="#3f8f8b" stroke-width="4"/>
+  <g fill="#c75c8a">
+    <circle cx="170" cy="200" r="13"/><circle cx="265" cy="225" r="13"/><circle cx="200" cy="300" r="13"/><circle cx="290" cy="290" r="13"/><circle cx="140" cy="265" r="13"/>
+  </g>
+  <text x="220" y="440" text-anchor="middle" font-size="28" font-weight="700" fill="#3b3442">International</text>
+  <text x="220" y="475" text-anchor="middle" font-size="28" font-weight="700" fill="#3b3442">COVID-19 cohort</text>
+  <!-- ECMO circuit -->
+  <rect x="560" y="140" width="160" height="220" rx="24" fill="#3b3442"/>
+  <rect x="585" y="170" width="110" height="70" rx="10" fill="#e3efee"/>
+  <path d="M595 215 H620 L632 190 L648 235 L660 205 L685 205" fill="none" stroke="#3f8f8b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="640" cy="300" r="34" fill="#c75c8a"/>
+  <circle cx="640" cy="300" r="14" fill="#fde2e4"/>
+  <path d="M720 200 C 820 200, 830 330, 900 330" fill="none" stroke="#c75c8a" stroke-width="12" stroke-linecap="round"/>
+  <path d="M720 300 C 800 300, 810 400, 900 400" fill="none" stroke="#3f8f8b" stroke-width="12" stroke-linecap="round"/>
+  <text x="640" y="440" text-anchor="middle" font-size="30" font-weight="700" fill="#3b3442">ECMO</text>
+  <!-- score validation: ROC curves -->
+  <rect x="80" y="540" width="840" height="390" rx="24" fill="#fff" stroke="#d9d2d6" stroke-width="4"/>
+  <text x="120" y="595" font-size="28" font-weight="700" fill="#3b3442">Validating mortality risk scores</text>
+  <line x1="170" y1="880" x2="560" y2="880" stroke="#3b3442" stroke-width="4"/>
+  <line x1="170" y1="880" x2="170" y2="630" stroke="#3b3442" stroke-width="4"/>
+  <line x1="170" y1="880" x2="560" y2="630" stroke="#d9d2d6" stroke-width="3" stroke-dasharray="10 8"/>
+  <path d="M170 880 C 190 700, 300 640, 560 630" fill="none" stroke="#c75c8a" stroke-width="7" stroke-linecap="round"/>
+  <path d="M170 880 C 230 760, 360 660, 560 630" fill="none" stroke="#3f8f8b" stroke-width="7" stroke-linecap="round"/>
+  <path d="M170 880 C 280 800, 430 690, 560 630" fill="none" stroke="#d9a441" stroke-width="7" stroke-linecap="round"/>
+  <g font-size="24" fill="#3b3442">
+    <rect x="620" y="660" width="28" height="12" rx="6" fill="#c75c8a"/><text x="665" y="673">Score A</text>
+    <rect x="620" y="720" width="28" height="12" rx="6" fill="#3f8f8b"/><text x="665" y="733">Score B</text>
+    <rect x="620" y="780" width="28" height="12" rx="6" fill="#d9a441"/><text x="665" y="793">Score C</text>
+  </g>
+  <text x="365" y="915" text-anchor="middle" font-size="20" fill="#8a8fa3">ROC across validation cohort</text>
+</svg>
