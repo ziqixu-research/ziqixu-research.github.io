@@ -376,10 +376,6 @@
 }
 
 @include breakpoint(max-width $medium) {
-  .page__content .selected-pubs-scroll {
-    max-height: min(84rem, 165vh);
-  }
-
   .sel-pub {
     grid-template-columns: 1fr;
     row-gap: 0.65rem;
