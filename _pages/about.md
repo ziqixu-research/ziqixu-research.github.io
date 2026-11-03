@@ -43,6 +43,6 @@ I collaborate with interdisciplinary teams across [Anesthesiology](https://anest
 <h2 class="selected-pubs-heading" id="service">Service &amp; Mentoring</h2>
 
 - **Program Committee:** ACM CIKM Workshop on Large-scale AI for Sensing Systems (LASS) 2026; International Multi-Conference on Artificial Intelligence Technology 2026
-- **Reviewer:** ICLR 2027, ACL Rolling Review 2026; *Nature Communications* (early-career co-reviewer), *ACM Transactions on Computing for Healthcare*, *Scientific Reports*, *BMC Medical Informatics and Decision Making*, *BMC Anesthesiology*, *Journal of Digital Health*
+- **Reviewer:** ICLR 2027, ACL Rolling Review 2026; *npj Digital Medicine*, *Nature Communications* (early-career co-reviewer), *ACM Transactions on Computing for Healthcare*, *Scientific Reports*, *BMC Medical Informatics and Decision Making*, *BMC Anesthesiology*, *Journal of Digital Health*
 - **Community:** Graduate Student Advisory Board Member, WashU Center for Career Engagement (2026–2027); Volunteer Organizer, WashU AI for Health Symposium (2024–2025) and AI for Health Venture Day (2026)
 - **Mentoring:** Mentored eight students (Ph.D., M.S., undergraduate, and medical) in multimodal sensing, uncertainty quantification, and clinical machine learning; five mentees co-authored publications, three as first or co-first author
